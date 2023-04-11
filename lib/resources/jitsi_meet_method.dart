@@ -1,8 +1,8 @@
 import 'package:jitsi_meet_fix/feature_flag/feature_flag.dart';
 import 'package:jitsi_meet_fix/jitsi_meet.dart';
-import 'package:zoom_clone/resources/auth_methods.dart';
+import 'package:vidstreamz/resources/auth_methods.dart';
 
-import 'package:zoom_clone/resources/firestore_methods.dart';
+import 'package:vidstreamz/resources/firestore_methods.dart';
 
 class JitsiMeetMethods {
   final AuthMethods _authMethods = AuthMethods();
@@ -32,7 +32,7 @@ class JitsiMeetMethods {
         ..audioMuted = isAudioMuted
         ..videoMuted = isVideoMuted;
 
-      firestoreMethods.addToMeetingHistory(roomName);
+      // firestoreMethods.addToMeetingHistory(roomName);
       await JitsiMeet.joinMeeting(options);
     } catch (error) {
       print("error: $error");

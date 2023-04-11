@@ -1,6 +1,6 @@
 {
-    "name": "zoom_clone",
-    "short_name": "zoom_clone",
+    "name": "vidstreamz",
+    "short_name": "vidstreamz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

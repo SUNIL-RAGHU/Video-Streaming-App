@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:jitsi_meet_fix/jitsi_meet.dart';
 
-import 'package:zoom_clone/resources/auth_methods.dart';
-import 'package:zoom_clone/resources/jitsi_meet_method.dart';
-import 'package:zoom_clone/utils/colors.dart';
+import 'package:vidstreamz/resources/auth_methods.dart';
+import 'package:vidstreamz/resources/jitsi_meet_method.dart';
+import 'package:vidstreamz/utils/colors.dart';
 
 import '../Widgets/meeting_options.dart';
 
@@ -53,7 +53,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: backgroundColor,
+        backgroundColor: Colors.grey,
         title: const Text(
           'Join a Meeting',
           style: TextStyle(
@@ -63,60 +63,72 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
         centerTitle: true,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 60,
-            child: TextField(
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(
-                fillColor: secondaryBackgroundColor,
-                filled: true,
-                border: InputBorder.none,
-                hintText: 'Room ID',
-                contentPadding: EdgeInsets.fromLTRB(16, 8, 0, 0),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              height: 60,
+              child: TextField(
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  fillColor: Colors.grey,
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: 'Room ID',
+                  contentPadding: EdgeInsets.fromLTRB(16, 8, 0, 0),
+                ),
               ),
             ),
           ),
-          SizedBox(
-            height: 60,
-            child: TextField(
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(
-                fillColor: secondaryBackgroundColor,
-                filled: true,
-                border: InputBorder.none,
-                hintText: 'Name',
-                contentPadding: EdgeInsets.fromLTRB(16, 8, 0, 0),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              height: 60,
+              child: TextField(
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  fillColor: Colors.grey,
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: 'Name',
+                  contentPadding: EdgeInsets.fromLTRB(16, 8, 0, 0),
+                ),
               ),
             ),
           ),
-          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MeetingOption(
+              text: 'Mute Audio',
+              isMute: isAudioMuted,
+              onChange: onAudioMuted,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MeetingOption(
+              text: 'Turn Off My Video',
+              isMute: isVideoMuted,
+              onChange: onVideoMuted,
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
           InkWell(
             onTap: _joinMeeting,
             child: const Padding(
               padding: EdgeInsets.all(8),
               child: Text(
-                'Join',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
+                'Join Now',
+                style: TextStyle(fontSize: 16, color: Colors.blueGrey),
               ),
             ),
-          ),
-          const SizedBox(height: 20),
-          MeetingOption(
-            text: 'Mute Audio',
-            isMute: isAudioMuted,
-            onChange: onAudioMuted,
-          ),
-          MeetingOption(
-            text: 'Turn Off My Video',
-            isMute: isVideoMuted,
-            onChange: onVideoMuted,
           ),
         ],
       ),

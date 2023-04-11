@@ -1,10 +1,11 @@
+import 'package:vidstreamz/screens/onboarding.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:zoom_clone/resources/auth_methods.dart';
-import 'package:zoom_clone/screens/home_screen.dart';
-import 'package:zoom_clone/screens/login_screen.dart';
-import 'package:zoom_clone/screens/video_call_screen.dart';
-import 'package:zoom_clone/utils/colors.dart';
+import 'package:vidstreamz/resources/auth_methods.dart';
+import 'package:vidstreamz/screens/home_screen.dart';
+import 'package:vidstreamz/screens/login_screen.dart';
+import 'package:vidstreamz/screens/video_call_screen.dart';
+import 'package:vidstreamz/utils/colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             return const HomeScreen();
           }
 
-          return const LoginScreen();
+          return OnBoarding();
         },
       ),
     );

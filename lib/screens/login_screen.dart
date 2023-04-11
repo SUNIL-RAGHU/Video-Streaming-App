@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:zoom_clone/Widgets/custom_button.dart';
-import 'package:zoom_clone/resources/auth_methods.dart';
+import 'package:vidstreamz/Widgets/custom_button.dart';
+import 'package:vidstreamz/resources/auth_methods.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

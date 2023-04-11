@@ -1,4 +1,4 @@
-package com.example.zoom_clone
+package com.example.vidstreamz
 
 import io.flutter.embedding.android.FlutterActivity
 

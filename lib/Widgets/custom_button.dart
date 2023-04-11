@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone/utils/colors.dart';
+import 'package:vidstreamz/utils/colors.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;

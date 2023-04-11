@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone/screens/history_meeting_screen.dart';
 
-import 'package:zoom_clone/screens/meeting_screen.dart';
+import 'package:vidstreamz/screens/meeting_screen.dart';
 
 import '../Widgets/custom_button.dart';
 import '../resources/auth_methods.dart';
@@ -25,8 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> Pages = [
     MeetingScreen(),
-    const HistoryMeetingScreen(),
-    const Text('Contacts'),
+    // const HistoryMeetingScreen(),
+    // const Text('Profile'),
     CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
 
@@ -37,7 +36,10 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: backgroundColor,
           elevation: 0,
-          title: const Text('Meet & Chat'),
+          title: const Text(
+            'Chat Now',
+            style: TextStyle(color: Colors.black),
+          ),
           centerTitle: true,
         ),
         body: Pages[_page],
@@ -52,28 +54,22 @@ class _HomeScreenState extends State<HomeScreen> {
           items: const [
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.comment_bank,
+                Icons.home,
               ),
-              label: 'Meet & Char',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.lock_clock,
-              ),
-              label: 'Meetings',
+              label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline,
               ),
-              label: 'Contacts',
+              label: 'Profile',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.settings_outlined,
-              ),
-              label: 'Settings',
-            ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(
+            //     Icons.settings_outlined,
+            //   ),
+            //   label: 'Settings',
+            // ),
           ],
         ),
       ),

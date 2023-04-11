@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:zoom_clone/resources/jitsi_meet_method.dart';
+import 'package:vidstreamz/resources/jitsi_meet_method.dart';
 
 import '../Widgets/meetingbutton.dart';
 
@@ -37,23 +37,14 @@ class MeetingScreen extends StatelessWidget {
             text: 'Join Meeting',
             icon: Icons.add_box_rounded,
           ),
-          HomeMeetingButton(
-            onPressed: () {},
-            text: 'Schedule',
-            icon: Icons.calendar_today,
-          ),
-          HomeMeetingButton(
-            onPressed: () {},
-            text: 'Share Screen',
-            icon: Icons.arrow_upward_rounded,
-          ),
         ],
       ),
       const Expanded(
           child: Center(
         child: Text(
-          'Create/Join Meetings with a click!',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          'Join/Create Meetings',
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black),
         ),
       ))
     ]);

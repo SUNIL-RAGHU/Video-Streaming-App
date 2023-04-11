@@ -1,41 +1,42 @@
 {
   "project_info": {
-    "project_number": "823857800052",
-    "project_id": "zoom-clone-bff2b",
-    "storage_bucket": "zoom-clone-bff2b.appspot.com"
+    "project_number": "854320912811",
+    "project_id": "vidstream-1d1ed",
+    "storage_bucket": "vidstream-1d1ed.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:823857800052:android:6898515047d7848bfe8221",
+        "mobilesdk_app_id": "1:854320912811:android:e9becb68cb9f7fe4b01aee",
         "android_client_info": {
-          "package_name": "com.example.zoom_clone"
+          "package_name": "com.example.vidstreamz"
         }
       },
       "oauth_client": [
         {
-          "client_id": "823857800052-soike7bbpv060v03ia7j2drmd2b8jl46.apps.googleusercontent.com",
+          "client_id": "854320912811-9a4halqkrfv4evou78t8e3ob3ugg937o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vidstreamz",
+            "certificate_hash": "e635a444b5707dce1b2ef09aa5fa31620573cb19"
+          }
+        },
+        {
+          "client_id": "854320912811-8enr4um4kg5tafkb6okc0vn71cv9limh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBEzGp4m9vXDlLuuq5Cbc7xD5ZBfs0z9mU"
+          "current_key": "AIzaSyD0pfRYYeMz1CeI-bYzKrSMkMeeSgfBkRs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "823857800052-soike7bbpv060v03ia7j2drmd2b8jl46.apps.googleusercontent.com",
+              "client_id": "854320912811-8enr4um4kg5tafkb6okc0vn71cv9limh.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "823857800052-12nf65fbn4srdj5e9u7cav06g0e24d47.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.zoomClone"
-              }
             }
           ]
         }

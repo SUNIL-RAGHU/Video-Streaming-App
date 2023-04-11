@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone/utils/colors.dart';
+import 'package:vidstreamz/utils/colors.dart';
 
 class MeetingOption extends StatelessWidget {
   final String text;
@@ -16,7 +16,7 @@ class MeetingOption extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      color: secondaryBackgroundColor,
+      color: Colors.grey,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
